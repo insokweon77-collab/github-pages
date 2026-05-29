@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>In So Kweon | Physical AI & Philosophy</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet">
+
+<style>
+
+:root {
+
+--primary-color: #1a2a40; /* 신뢰감 있는 네이비 블루 */
+
+--accent-color: #8c3b2d; /* 보이차의 갈홍색 */
+
+--bg-light: #f4f4f4;
+
+--text-dark: #333;
+
+--white: #ffffff;
+
+}
+
+body {
+
+font-family: 'Pretendard', sans-serif;
+
+line-height: 1.6;
+
+color: var(--text-dark);
+
+margin: 0;
+
+background-color: var(--bg-light);
+
+scroll-behavior: smooth;
+
+}
+
+header {
+
+background: var(--white);
+
+padding: 1rem 5%;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+position: sticky;
+
+top: 0;
+
+z-index: 1000;
+
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); letter-spacing: 2px; }
+
+nav a { text-decoration: none; margin-left: 25px; color: var(--text-dark); font-weight: 500; transition: 0.3s; }
+
+nav a:hover { color: var(--accent-color); }
+
+.hero {
+
+background: linear-gradient(rgba(26, 42, 64, 0.85), rgba(26, 42, 64, 0.85)), url('assets/lab.jpg') center/cover;
+
+height: 70vh;
+
+color: var(--white);
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+align-items: center;
+
+text-align: center;
+
+padding: 0 20px;
+
+}
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+
+.hero p { font-size: 1.3rem; max-width: 800px; font-weight: 300; }
+
+section { padding: 80px 10%; }
+
+h2 { border-left: 6px solid var(--accent-color); padding-left: 15px;
+margin-bottom: 40px; color: var(--primary-color); font-size: 2rem; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+.card { background: var(--white); padding: 40px; border-radius: 12px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+
+/* 보이차: 다행공미 섹션 */
+
+.tea-section { background: var(--primary-color); color: var(--white);
+border-radius: 30px; margin: 20px 5%; }
+
+.tea-philosophy { font-style: italic; color: #d4a373; font-size: 1.2rem;
+margin-bottom: 30px; display: block; }
+
+.feed { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+
+.feed-item { background: rgba(255,255,255,0.1); height: 280px;
+border-radius: 15px; position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,0.2); }
+.feed-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.feed-caption { position: absolute; bottom: 0; background: rgba(0,0,0,0.7); color: white; width: 100%; padding: 15px; font-size:
+0.9rem; }
+
+/* 독서 & 사진 섹션 */
+
+.daily-message { background: #fffbe6; padding: 50px; border-radius: 20px; border: 1px solid #ffe58f; text-align: center; margin-bottom:
+50px; }
+
+.daily-message h3 { color: #856404; margin-top: 0; }
+
+footer { background: var(--primary-color); color: rgba(255,255,255,0.7);
+text-align: center; padding: 60px; font-size: 0.9rem; }
+
+.social-links a { color: var(--white); margin: 0 10px; font-size: 1.2rem; }
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">IN SO KWEON</div>
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#research">Physical AI</a>
+
+<a href="#tea">Tea Garden</a>
+
+<a href="#library">Library</a>
+
+<a href="#perspectives">Perspectives</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>피지컬 AI로 여는 새로운 미래</h1>
+
+<p>"잘 키운 로봇 하나, 열 자식 안 부러운 세상을 꿈꿉니다."</p>
+
+<p style="margin-top:20px; font-size: 1.1rem; opacity: 0.9;">KIST 국가특임연구원 | KAIST 명예교수</p>
+
+</section>
+
+<!-- 연구 분야 -->
+
+<section id="research">
+
+<h2>Physical AI & Robotics</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<i class="fas fa-robot" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+
+<h3>KAPEX Humanoid</h3>
+
+<p>로봇이 현실 환경을 인식하고 스스로 판단하여 행동하는 지능형 로봇 기술을 연구합니다. 차세대 휴머노이드 <strong>KAPEX</strong> 개발을
+이끌고 있습니다.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-eye" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+
+<h3>Computer Vision</h3>
+
+<p>전 세계적으로 수만 회 인용된 CBAM 알고리즘 등 시각 지능 분야의 혁신을 주도하며 인공지능의 '눈'을 만듭니다.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- 다행공미(보이차) -->
+
+<section id="tea" class="tea-section">
+
+<h2>Tea Garden: 다행공미(茶行共味)</h2>
+
+<span class="tea-philosophy">"차를 통해 맛을 함께 나누고 베푸는 삶을 산다"</span>
+
+<p>보이차는 단순한 음료를 넘어 나눔의 철학입니다. 상처 난 찻잎이 발효를 거쳐 깊은 맛을 내듯, 인내와 실천을 통해 완성되는 삶의 가치를 제자들과
+함께 나눕니다.</p>
+
+<div class="feed">
+
+<div class="feed-item">
+
+<img src="assets/lab.jpg" alt="Today's Tea">
+<div class="feed-caption"><strong>Today's Tea:</strong> 대익 7542 (1998 Vintage)</div>
+
+</div>
+
+<div class="feed-item">
+
+<img src="assets/lab.jpg" alt="Sharing">
+<div class="feed-caption"><strong>Sharing:</strong> 연구실 제자들과의 오후 찻자리</div>
+
+</div>
+
+<div class="feed-item">
+
+<img src="assets/lab.jpg" alt="Master's Collection">
+<div class="feed-caption"><strong>Master's Collection:</strong> 의흥 자사호와 경덕진 다구</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- 사유의 서재 -->
+
+<section id="library">
+
+<h2>Library: 사유의 서재</h2>
+
+<div class="daily-message">
+
+<h3>오늘의 메시지</h3>
+
+<p style="font-size: 1.4rem; color: #333;">"스승과 제자가 서로에게 배우는 '불치하문(不恥下問)'의 자세가 성장의 핵심입니다."</p>
+
+</div>
+
+<p>매일 아침 책을 펼쳐 영감을 얻습니다. 『생각의 탄생』을 비롯한 80여 권의 인문학 서적은 과학적 통찰의 밑거름이 됩니다.</p>
+
+</section>
+
+<!-- 사진 찍기 -->
+
+<section id="perspectives">
+
+<h2>Perspectives: 사진으로 보는 세상</h2>
+
+<div class="feed">
+
+<div class="feed-item">
+
+<img src="assets/kist_spring.png" alt="KIST 교정의 봄">
+<div class="feed-caption">KIST 교정의 봄</div>
+
+</div>
+
+<div class="feed-item">
+
+<img src="assets/lab.jpg" alt="NASA 연구원 시절의 기록">
+<div class="feed-caption">NASA 연구원 시절의 기록</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="social-links" style="margin-bottom: 20px;">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fas fa-envelope"></i></a>
+
+</div>
+
+<p>Contact: iskweon77@kaist.ac.kr</p>
+
+<p>&copy; 2026 In-So Kweon. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
